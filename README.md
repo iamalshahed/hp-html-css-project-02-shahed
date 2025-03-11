@@ -1,1 +1,1 @@
-# hp-html-css-project-02-shahed
+# hp-html-css-project-02-shahed | Maintenance
