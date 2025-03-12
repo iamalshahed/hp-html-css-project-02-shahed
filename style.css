@@ -38,9 +38,9 @@ body {
       rgba(0, 0, 0, 0.9) 100%
     ),
     url("./images/hero.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero nav {
@@ -52,108 +52,305 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  & a img{
+  & a img {
     max-width: 150px;
     width: 100%;
     height: auto;
   }
 
-  & ul{
-    background: #0F0F0F;
+  & ul {
+    background: #0f0f0f;
     padding: 20px 4px;
     border-radius: 12px;
-    border: 4px solid #1F1F1F;
+    border: 4px solid #1f1f1f;
 
-    & li{
-        display: inline-block;
-        margin: 0 0.2rem;
+    & li {
+      display: inline-block;
+      margin: 0 0.2rem;
 
-        & a{
-            padding: 14px 24px;
-            font-size: 1rem;
-            font-weight: 400;
-            color: #BFBFBF;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+      & a {
+        padding: 14px 24px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #bfbfbf;
+        border-radius: 8px;
+        transition: all 0.3s ease;
 
-            &:hover{
-                background: #1A1A1A;
-            }
-
-            &.active_link, &.active_link:hover{
-                background: #1A1A1A;
-                font-weight: 500;
-                color: #fff;
-            }
+        &:hover {
+          background: #1a1a1a;
         }
+
+        &.active_link,
+        &.active_link:hover {
+          background: #1a1a1a;
+          font-weight: 500;
+          color: #fff;
+        }
+      }
     }
   }
 
   /* nav icon */
-  & .nav_icons{
+  & .nav_icons {
     display: flex;
     align-items: center;
 
-    & a i{
-        color: #fff;
-        font-size: 1.2rem;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        border-radius: 50%;
-        transition: all 0.3s ease;
+    & a i {
+      color: #fff;
+      font-size: 1.2rem;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      border-radius: 50%;
+      transition: all 0.3s ease;
 
-        &:hover{
-            background: #1F1F1F;
-        }
+      &:hover {
+        background: #1f1f1f;
+      }
     }
   }
 }
 
 /* hero_content */
-.hero_content{
-    position: absolute;
-    bottom: 5rem;
-    padding: 1rem;
-    text-align: center;
-    line-height: 1.5;
+.hero_content {
+  position: absolute;
+  bottom: 5rem;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.5;
 
-    & h1{
-        font-size: 58px;
+  & h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  & p {
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #999;
+    margin-bottom: 2rem;
+  }
+
+  & button {
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 auto;
+    padding: 18px 24px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #e50000;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #be0000;
+    }
+  }
+}
+/* ============ Hero section end ============ */
+
+/* ============ Category section start ============ */
+.category {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+
+  & .category_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12rem;
+
+    & .category_title {
+      & h2 {
+        font-size: 2.375rem;
         font-weight: 700;
-        margin-bottom: 1rem;
+        line-height: 2;
+      }
+
+      & p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #999999;
+      }
     }
 
-    & p{
-        max-width: 50%;
-        width: 100%;
-        margin: 0 auto;
-        font-size: 1.1rem;
-        color: #999;
-        margin-bottom: 2rem;
-    }
+    .ctegory_right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: #0f0f0f;
+      border: 1px solid #1f1f1f;
+      border-radius: 12px;
 
-    & button{
-        font-family: "Manrope", sans-serif;
+      & button {
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        background: #1a1a1a;
+        border: 1px solid #1f1f1f;
+        border-radius: 8px;
+        outline: none;
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+        text-align: center;
         display: flex;
         align-items: center;
-        gap: 0.4rem;
-        margin: 0 auto;
-        padding: 18px 24px;
-        border: none;
-        outline: none;
-        border-radius: 8px;
-        background: #E50000;
-        font-size: 18px;
-        font-weight: 500;
-        color: #fff;
+        justify-content: center;
         cursor: pointer;
         transition: all 0.3s ease;
 
-        &:hover{
-            background: #be0000;
+        &:hover {
+          background: #2b2b2b;
         }
+      }
+
+      & .line {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        & .line-w {
+          width: 23px;
+          height: 4px;
+          border-radius: 100px;
+          background: #333333;
+
+          &.active-line-w {
+            background: #e50000;
+          }
+        }
+      }
     }
+  }
+
+  .category_grids {
+    width: 100%;
+    overflow: auto;
+    margin-top: 3.12rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1.875rem; /* 30 px */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & .poster {
+      padding: 1.875rem; /* 30 px */
+      background: #1a1a1a;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      & .poster_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
 }
-/* ============ Hero section end ============ */
+/* ============ Category section end ============ */
+
+/* ============ Device section start ============ */
+.device {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+
+  & .device_heading {
+    & h3 {
+      font-size: 2.375rem;
+      font-weight: 700;
+      line-height: 2;
+    }
+
+    & p {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: #999999;
+    }
+  }
+
+  /* device_card_grids */
+  .device_card_grids {
+    width: 100%;
+    margin-top: 3.12rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1.875rem;
+
+    & .device_card {
+      position: relative;
+      padding: 3.125rem;
+      background: #0f0f0f;
+      border: 1px solid #262626;
+      border-radius: 12px;
+      line-height: 1.5;
+      overflow: hidden;
+
+      & .gradient {
+        position: absolute;
+        top: -2rem;
+        right: 2rem;
+        box-shadow: 0 0 9000px 50px rgba(255, 0, 0, 0.5);
+      }
+
+      & .device_card_title {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        & .device_card_title_img {
+          width: 72px;
+          height: 72px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 16px;
+          background: #141414;
+          border: 1px solid #1f1f1f;
+          border-radius: 12px;
+        }
+
+        & span {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+
+      & p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #999999;
+        margin-top: 30px;
+        text-align: justify;
+      }
+    }
+  }
+}
+/* ============ Device section end ============ */
